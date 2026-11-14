@@ -5,5 +5,5 @@ package com.dh.carsimulationassignment;
  * @author Daniel Haddadeen (2588731)
  */
 public enum CarType {
-    BMW, Toyota, Nissan, Benz, Honda, Ford, Chevrolet
+    BMW, TOYOTA, NISSAN, BENZ, HONDA, FORD, CHEVROLET
 }
