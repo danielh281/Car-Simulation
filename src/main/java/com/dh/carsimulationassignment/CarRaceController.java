@@ -17,13 +17,10 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
-import javafx.collections.MapChangeListener;
 import javafx.collections.ObservableList;
-import javafx.collections.ObservableMap;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.shape.Circle;
 import javafx.scene.Node;
 
 import javafx.scene.control.Button;
@@ -122,7 +119,7 @@ public class CarRaceController implements Initializable {
             if (raceState.get().equals(RaceState.FINISHED)) {
                 CarRaceModel firstCar = finishedCars.get(0);
                 
-                String carEntryName = getCarEntryName(firstCar);
+                String carEntryName = firstCar.getCarEntryName();
                 String message = String.format("Congratulations! %s is the winner!", carEntryName);
                 
                 raceMessageLabel.setText(message);
@@ -173,6 +170,7 @@ public class CarRaceController implements Initializable {
             carAnimation.setInterpolator(Interpolator.EASE_IN);
             carAnimation.rateProperty().bind(simulationSpeed);
             
+            // Move car forwards
             TranslateTransition translate = new TranslateTransition(transitionDuration, carNode);
             translate.setFromX(0);
             translate.setToX(Config.FINISH_POSITION_X);
@@ -247,10 +245,6 @@ public class CarRaceController implements Initializable {
         carAnimations.clear();
     }
     
-    public String getCarEntryName(CarRaceModel carRaceModel) {
-        return String.format("Car #%d (%s)", carRaceModel.getNumber(), carRaceModel.getColor());
-    }
-    
     public void setLeaderboardEntry(int place, CarRaceModel carFinished) {
         Label placeLabel = switch (place) {
             case 1 -> firstPlaceLabel;
@@ -275,7 +269,7 @@ public class CarRaceController implements Initializable {
         if (carFinished == null) {
             placeLabel.setText(prefix);
         } else {
-            String carEntryName = getCarEntryName(carFinished);
+            String carEntryName = carFinished.getCarEntryName();
             placeLabel.setText(prefix + " " + carEntryName);
         }
     }

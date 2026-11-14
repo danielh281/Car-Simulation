@@ -3,6 +3,10 @@ package com.dh.carsimulationassignment;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 
+/**
+ * Model class containing each car's data
+ * @author Daniel Haddadeen (2588731)
+ */
 public class CarRaceModel {
     private CarType type;
     private CarColor color;
@@ -15,6 +19,14 @@ public class CarRaceModel {
         this.type = type;
         this.color = color;
         this.number = number;
+    }
+    
+    /**
+     * Creates the entry name for the CarRaceModel object
+     * @return The entry name of the CarRaceModel
+     */
+    public String getCarEntryName() {
+        return String.format("Car #%d (%s)", number, color);
     }
     
     public void setSpeed(double speed) {

@@ -1,8 +1,8 @@
 package com.dh.carsimulationassignment;
 
 /**
- *
- * @author danie
+ * Enumerations for race states
+ * @author Daniel Haddadeen (2588731)
  */
 public enum RaceState {
     WAITING("Waiting for race start..."),
