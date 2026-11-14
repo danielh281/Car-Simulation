@@ -5,5 +5,18 @@ package com.dh.carsimulationassignment;
  * @author Daniel Haddadeen (2588731)
  */
 public enum CarColor {
-    RED, PINK, BLUE, GREEN
+    RED("Red"),
+    PINK("Pink"),
+    BLUE("Blue"),
+    GREEN("Green");
+    
+    private String name;
+
+    CarColor(String name) {
+        this.name = name;
+    }
+    
+    public String getName() {
+        return name;
+    }
 }

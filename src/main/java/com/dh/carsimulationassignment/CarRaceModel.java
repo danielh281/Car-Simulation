@@ -26,7 +26,7 @@ public class CarRaceModel {
      * @return The entry name of the CarRaceModel
      */
     public String getCarEntryName() {
-        return String.format("Car #%d (%s)", number, color);
+        return String.format("Car #%d (%s)", number, color.getName());
     }
     
     public void setSpeed(double speed) {

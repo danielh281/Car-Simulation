@@ -82,10 +82,10 @@ public class CarRaceController implements Initializable {
         Random rand = new Random();
 
         // Cache all car nodes and car race models
-        carInfo.put(new CarRaceModel(CarType.Ford, CarColor.RED, 50), redCar);
+        carInfo.put(new CarRaceModel(CarType.FORD, CarColor.RED, 50), redCar);
         carInfo.put(new CarRaceModel(CarType.BMW, CarColor.PINK, 93), pinkCar);
-        carInfo.put(new CarRaceModel(CarType.Benz, CarColor.BLUE, 25), blueCar);
-        carInfo.put(new CarRaceModel(CarType.Toyota, CarColor.GREEN, 76), greenCar);
+        carInfo.put(new CarRaceModel(CarType.BENZ, CarColor.BLUE, 25), blueCar);
+        carInfo.put(new CarRaceModel(CarType.TOYOTA, CarColor.GREEN, 76), greenCar);
 
         // Randomly set each car's speed & update position
         for (Entry<CarRaceModel, Pane> entry : carInfo.entrySet()) {
