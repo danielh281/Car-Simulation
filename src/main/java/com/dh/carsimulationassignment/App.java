@@ -9,6 +9,7 @@ import java.io.IOException;
 
 /**
  * JavaFX App
+ * GitHub Repository: https://github.com/danielh281/Car-Simulation
  */
 public class App extends Application {
 
