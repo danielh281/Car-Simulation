@@ -1,11 +1,14 @@
 package com.dh.carsimulationassignment;
 
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.SimpleDoubleProperty;
+
 public class CarRaceModel {
     private CarType type;
     private CarColor color;
     private int number;
-    private double positionX;
-    private double positionY;
+    private DoubleProperty positionX = new SimpleDoubleProperty(0);
+    private DoubleProperty positionY = new SimpleDoubleProperty(0);
     private double speed;
 
     public CarRaceModel(CarType type, CarColor color, int number) {
@@ -19,22 +22,30 @@ public class CarRaceModel {
     }
 
     public void setPositionX(double positionX) {
-        this.positionX = positionX;
+        this.positionX.set(positionX);
     }
 
     public void setPositionY(double positionY) {
-        this.positionY = positionY;
+        this.positionY.set(positionY);
     }
 
+    public CarColor getColor() {
+        return color;
+    }
+    
+    public int getNumber() {
+        return number;
+    }
+    
     public double getSpeed() {
         return speed;
     }
 
-    public double getPositionX() {
+    public DoubleProperty getPositionX() {
         return positionX;
     }
 
-    public double getPositionY() {
+    public DoubleProperty getPositionY() {
         return positionY;
     }
 }

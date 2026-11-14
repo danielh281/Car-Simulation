@@ -46,14 +46,14 @@
                                     <Font size="6.0" />
                                  </font>
                               </Text>
-                              <Pane layoutX="50.0" layoutY="56.0">
+                              <Pane id="wheel" layoutX="50.0" layoutY="56.0">
                                  <children>
                                     <Circle fill="#0b2c4b" layoutX="10.0" layoutY="9.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
                                     <Circle fill="WHITE" layoutX="10.0" layoutY="9.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
                                     <Line endX="6.0" layoutX="10.0" layoutY="9.0" startX="-6.000003814697266" />
                                  </children>
                               </Pane>
-                              <Pane layoutX="110.0" layoutY="56.0">
+                              <Pane id="wheel" layoutX="110.0" layoutY="56.0">
                                  <children>
                                     <Circle fill="#0b2c4b" layoutX="10.0" layoutY="9.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
                                     <Circle fill="WHITE" layoutX="10.0" layoutY="9.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
@@ -74,14 +74,14 @@
                                     <Font size="6.0" />
                                  </font>
                               </Text>
-                              <Pane layoutX="50.0" layoutY="56.0">
+                              <Pane id="wheel" layoutX="50.0" layoutY="56.0">
                                  <children>
                                     <Circle fill="#0b2c4b" layoutX="10.0" layoutY="9.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
                                     <Circle fill="WHITE" layoutX="10.0" layoutY="9.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
                                     <Line endX="6.0" layoutX="10.0" layoutY="9.0" startX="-6.000003814697266" />
                                  </children>
                               </Pane>
-                              <Pane layoutX="110.0" layoutY="56.0">
+                              <Pane id="wheel" layoutX="110.0" layoutY="56.0">
                                  <children>
                                     <Circle fill="#0b2c4b" layoutX="10.0" layoutY="9.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
                                     <Circle fill="WHITE" layoutX="10.0" layoutY="9.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
@@ -102,14 +102,14 @@
                                     <Font size="6.0" />
                                  </font>
                               </Text>
-                              <Pane layoutX="50.0" layoutY="56.0">
+                              <Pane id="wheel" layoutX="50.0" layoutY="56.0">
                                  <children>
                                     <Circle fill="#0b2c4b" layoutX="10.0" layoutY="9.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
                                     <Circle fill="WHITE" layoutX="10.0" layoutY="9.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
                                     <Line endX="6.0" layoutX="10.0" layoutY="9.0" startX="-6.000003814697266" />
                                  </children>
                               </Pane>
-                              <Pane layoutX="110.0" layoutY="56.0">
+                              <Pane id="wheel" layoutX="110.0" layoutY="56.0">
                                  <children>
                                     <Circle fill="#0b2c4b" layoutX="10.0" layoutY="9.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
                                     <Circle fill="WHITE" layoutX="10.0" layoutY="9.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
@@ -130,14 +130,14 @@
                                     <Font size="6.0" />
                                  </font>
                               </Text>
-                              <Pane layoutX="50.0" layoutY="56.0">
+                              <Pane id="wheel" layoutX="50.0" layoutY="56.0">
                                  <children>
                                     <Circle fill="#0b2c4b" layoutX="10.0" layoutY="9.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
                                     <Circle fill="WHITE" layoutX="10.0" layoutY="9.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
                                     <Line endX="6.0" layoutX="10.0" layoutY="9.0" startX="-6.000003814697266" />
                                  </children>
                               </Pane>
-                              <Pane layoutX="110.0" layoutY="56.0">
+                              <Pane id="wheel" layoutX="110.0" layoutY="56.0">
                                  <children>
                                     <Circle fill="#0b2c4b" layoutX="10.0" layoutY="9.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
                                     <Circle fill="WHITE" layoutX="10.0" layoutY="9.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
