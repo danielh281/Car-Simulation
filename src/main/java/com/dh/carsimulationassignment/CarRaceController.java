@@ -245,6 +245,11 @@ public class CarRaceController implements Initializable {
         carAnimations.clear();
     }
     
+    /**
+     * Sets a leader board entry for the corresponding CarRaceModel according to its place.
+     * @param place The place the CarRaceModel finished at
+     * @param carFinished The CarRaceModel object
+     */
     public void setLeaderboardEntry(int place, CarRaceModel carFinished) {
         Label placeLabel = switch (place) {
             case 1 -> firstPlaceLabel;
@@ -274,6 +279,9 @@ public class CarRaceController implements Initializable {
         }
     }
     
+    /**
+     * Clears all the leader board entries
+     */
     public void clearLeaderboardEntries() {
         for (int i = 1; i < 5; i++) {
             setLeaderboardEntry(i, null);

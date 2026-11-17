@@ -9,7 +9,9 @@ public class Config {
     public static final double MIN_SPEED = 25;
     public static final double MAX_SPEED = 50;
     
+    // The pixel position the car needs to reach to be considered "finished"
     public static final int FINISH_POSITION_X = 450;
+    
     public static final String[] CAR_IMAGES_PATH = {
         "/images/redcar.png", "/images/pinkcar.png", "/images/bluecar.png", "/images/greencar.png"
     };
