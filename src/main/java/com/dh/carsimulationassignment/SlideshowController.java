@@ -10,6 +10,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.util.Duration;
 
 /**
@@ -32,8 +34,14 @@ public class SlideshowController implements Initializable {
     }
 
     public void playSlideshow() {
+        Media media = new Media(App.class.getResource("/audio/slideshowSong.wav").toExternalForm());
         SequentialTransition masterSequence = new SequentialTransition();
 
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
+        
+        mediaPlayer.setCycleCount(3);
+        mediaPlayer.play();
+        
         // Welcome message sequence
         FadeTransition welcomeFadeIn = new FadeTransition(Duration.seconds(0.5), welcomeLabel);
         welcomeFadeIn.setFromValue(0);
@@ -70,6 +78,7 @@ public class SlideshowController implements Initializable {
         // Transition to the car race simulation once the slideshow finishes
         masterSequence.setOnFinished(eh -> {
             try {
+                mediaPlayer.stop();
                 App.setRoot("carRace");
             } catch(Exception e) {
                 // ignored
